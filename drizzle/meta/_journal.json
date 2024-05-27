@@ -15,6 +15,13 @@
       "when": 1715718337137,
       "tag": "0001_sweet_lenny_balinger",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1716812696390,
+      "tag": "0002_late_talos",
+      "breakpoints": true
     }
   ]
 }

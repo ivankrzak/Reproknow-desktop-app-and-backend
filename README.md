@@ -62,19 +62,7 @@ yarn install
 
 This command reads the `package.json` file and installs all the necessary dependencies.
 
-## Step 2: Start the Development Server
-
-With the dependencies installed, you can now start the development server. This command also starts up the Next.js application:
-
-```bash
-yarn dev
-```
-
-Next.js application should now be running! Open your web browser and navigate to `http://localhost:3000` to see your application in action.
-
-With these steps, you've successfully set up the NextJS template on your local machine. Happy coding!
-
-## Step 3: Create database in docker
+## Step 2: Create database in docker
 
 run
 
@@ -88,3 +76,15 @@ docker compose up --build -d
 yarn db:generate
 yarn db:migrate
 ```
+
+## Step 5: Start the Development Server
+
+With the dependencies installed, you can now start the development server. This command also starts up the Next.js application:
+
+```bash
+yarn dev
+```
+
+Next.js application should now be running! Open your web browser and navigate to `http://localhost:3000` to see your application in action.
+
+Now you can create some new product to test the backend
