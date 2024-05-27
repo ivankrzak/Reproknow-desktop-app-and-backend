@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  drizzle-test:
+    container_name: drizzle-test
+    image: postgres:16.1-alpine
+    restart: always
+    ports:
+      - '${DATABASE_PORT}:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: drizzle-test
+    volumes:
+      - drizzle-test-volume:/var/lib/postgresql/data
+volumes:
+  drizzle-test-volume:

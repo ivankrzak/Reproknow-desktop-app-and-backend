@@ -1,0 +1,10 @@
+overwrite: true
+schema: 'src/api/graphql/typeDefs'
+documents: null
+generates:
+  src/api/generated/resolversTypes.ts:
+    config:
+      contextType: ../types/GraphQLContext#YogaServerContext
+    plugins:
+      - 'typescript'
+      - 'typescript-resolvers'
